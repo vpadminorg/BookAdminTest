@@ -41,6 +41,7 @@ stateDiagram-v2
     end note
     State1 --&gt; State2
     note left of State2 : This is the note to the left.
+
   
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
@@ -500,7 +501,7 @@ create a <code>mermaid.json</code> file in your <code>assets</code> folder!</p>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">&lt;</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mermaid</span> <span style="color:#f92672">&gt;</span><span style="color:#75715e">}}</span>
 </span></span></code></pre></div>  </div>
 <div class="flex-even markdown-inner" style="flex-grow: 1;">
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">stateDiagram-v2
+<pre class="mermaid">stateDiagram-v2
     State1: The state with a note
     note right of State1
         Important information! You can write
@@ -508,7 +509,8 @@ create a <code>mermaid.json</code> file in your <code>assets</code> folder!</p>
     end note
     State1 --&gt; State2
     note left of State2 : This is the note to the left.
-</code></pre>  </div>
+</pre>
+  </div>
 </div>
 </article>
  
@@ -593,4 +595,11 @@ create a <code>mermaid.json</code> file in your <code>assets</code> folder!</p>
 
 
 
+
+
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
 
